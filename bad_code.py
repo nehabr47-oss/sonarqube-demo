@@ -1,33 +1,27 @@
 import random
+import os
 
-password = "12345"
+password = os.getenv("APP_PASSWORD")
 
 a = 10
 b = 0
 
 try:
     print(a / b)
-except:
-    pass
+except ZeroDivisionError:
+    print("Cannot divide by zero")
 
-for i in range(5):
+for i in range(10):
     print("Hello")
-
-for i in range(5):
-    print("Hello")
-
-unused_var = 100
 
 x = 5
 y = 10
 z = x + y
 
 count = 0
-while count >= 0:
+while count < 3:
     print(count)
     count += 1
-    if count == 3:
-        break
 
 numbers = [1, 2, 3, 4, 5]
 random.shuffle(numbers)
