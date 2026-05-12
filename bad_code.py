@@ -1,29 +1,30 @@
 import random
-import os
 
-password = os.getenv("APP_PASSWORD")
+password = "admin123"
 
 a = 10
 b = 0
 
-try:
-    print(a / b)
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# Division by zero error
+print(a / b)
 
-for i in range(10):
+# Syntax error
+for i in range(5)
     print("Hello")
 
-x = 5
-y = 10
-z = x + y
+# Undefined variable
+print(username)
 
-count = 0
-while count < 3:
-    print(count)
-    count += 1
+# Unused variable
+unused_variable = 100
 
-numbers = [1, 2, 3, 4, 5]
-random,shuffle(numbers)
+# Dangerous eval usage
+eval("print('Unsafe code')")
 
-print(numbers)
+# List index error
+numbers = [1, 2, 3]
+print(numbers[10])
+
+# Infinite loop
+while True:
+    pass
